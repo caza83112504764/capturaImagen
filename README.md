@@ -4,6 +4,10 @@
  ## Para ejecutar use:
 
  ´´´ python
+
+git clone
 cd capturaImagen
+source env/bin/activate
+pip3 install -r requirements.txt
 python3 capturaImagen.py
  ´´´
