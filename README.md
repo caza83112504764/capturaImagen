@@ -1,5 +1,5 @@
  # Capturador de documentos.
- ## Captura un documento de identidad por ambas caras, permitiendo recortar el area deseada, lo importa a un PDF donde se ubica ambas caras en una hoja y la frntal sobre la posterior.
+ ## Captura un documento de identidad por ambas caras, permitiendo recortar el area deseada, lo importa a un PDF donde se ubica ambas caras en una hoja: la cara frontal sobre la cara posterior.
 
  ## Para ejecutar use:
 
