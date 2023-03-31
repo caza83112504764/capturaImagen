@@ -1,0 +1,22 @@
+[outputPdf]
+# Directorio para las capturas (png).
+capturesimgpath = ./captures/
+# Nombre para la captura frontal.
+frontalimagename = capture_frontal.png
+# Nombre para la captura posterior.
+posteriorimagename = capture_posterior.png
+# Directorio para los documentos de salida(outputs).
+outputpdfpath = ./pdf_output/
+# Nombre para el documentos de salida.
+outputpdfname = output
+# Extension para el documento de salida
+outputextension = pdf
+# Activa la agragacion de date al nombre (Use 'True' sin comillas para activar').
+dateInOutputName = True
+# Activa la solicitud de nombre para el nuevo documento (Use 'True' sin comillas para activar').
+solicitarnombre = True
+# Valor para la escala que se usa en la eneracion del documento.
+scalecapture = 0.4
+# Activa la generación del documento en escala de grises (Use 'True' sin comillas para activar').
+grayscale = True
+
