@@ -2,5 +2,5 @@
 # Ejecuta la aplicación capturamagen.py
 
 cd /home/gamble/capturaImagen || exit
-source /env/bin/activate
+source env/bin/activate
 python3 capturaImagen.py
