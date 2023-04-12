@@ -30,6 +30,13 @@ class ImagePDF:
         print(self.posterior_image_path)
         print(self.frontal_image_path)
         self.outputs_path = configuracion.get('outputPdf', 'outputpdfPath')
+        
+        # Si el directorio 'pdf_output' no existe se crea.
+        try:
+            os.stat(self.outputs_path)
+        except:
+            os.mkdir(self.outputs_path)
+        
         # Si en este punto la variable para el nombre no esta disponible, el nombre se trae desde el achivo de configuración
         if self.outputs_name == "":
                 self.outputs_name = configuracion.get('outputPdf', 'outputPdfName')
