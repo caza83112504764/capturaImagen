@@ -11,4 +11,10 @@ python3 -m venv env
 source env/bin/activate
 pip3 install -r requirements.txt
 python3 capturaImagen.py
+
+Tambien puede ejecutar:
+chmod 777 capturaImagen.sh # Para dar permisos de Exec.
+./capturaImagen.sh
+
+Copie el fichero 'superservicios_capturaImagen.desktop' en '/usr/share/applications' para crear un acceso directo en aplicaciones para todos los usuarios.
  ´´´

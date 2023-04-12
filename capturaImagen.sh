@@ -1,6 +1,6 @@
-#!/usr/bin/sh
+#!/usr/bin/bash
 # Ejecuta la aplicación capturamagen.py
 
 cd /home/gamble/capturaImagen || exit
-./env/bin/activate
+source /env/bin/activate
 python3 capturaImagen.py
