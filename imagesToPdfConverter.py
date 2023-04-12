@@ -33,9 +33,9 @@ class ImagePDF:
         
         # Si el directorio 'pdf_output' no existe se crea.
         try:
-            os.stat(self.output_path)
+            os.stat(self.outputs_path)
         except:
-            os.mkdir(self.output_path)
+            os.mkdir(self.outputs_path)
         
         # Si en este punto la variable para el nombre no esta disponible, el nombre se trae desde el achivo de configuración
         if self.outputs_name == "":

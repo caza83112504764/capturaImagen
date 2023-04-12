@@ -4,7 +4,7 @@ import cv2
 import imutils
 import os
 from imagesToPdfConverter import ImagePDF
-from webcamsDisponibles import WebCams
+#from webcamsDisponibles import WebCams
 #import webcamsDisponibles
 
 
@@ -38,7 +38,7 @@ class WebcamCapture:
         ###########################################################################
         ###########################################################################
         ###########################################################################
-        self.cap = cv2.VideoCapture(4)
+        self.cap = cv2.VideoCapture(0)
         ###########################################################################
         ###########################################################################
         ###########################################################################
