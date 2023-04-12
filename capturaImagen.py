@@ -4,6 +4,8 @@ import cv2
 import imutils
 import os
 from imagesToPdfConverter import ImagePDF
+from webcamsDisponibles import WebCams
+#import webcamsDisponibles
 
 
 class WebcamCapture:
@@ -11,6 +13,20 @@ class WebcamCapture:
         self.master = master
         self.master.title("Capturador de Documentos desde la Webcam")
         self.master.geometry("652x685")
+        
+        # Creando un menu para la aplicacion.
+        self.menuPrincipal = tk.Menu(self.master)
+        self.menuPrincipal.add_command(label='Salir')
+
+        # Creando un menu desplegable para seleccionar la webcam.
+        self.desplegableWebcams = tk.Menu(self.menuPrincipal)
+        self.desplegableWebcams.add_command(label='1')
+        self.desplegableWebcams.add_command(label='2')
+        self.desplegableWebcams.add_command(label='3')
+        self.menuPrincipal.add_cascade(label='Webcams', menu=self.desplegableWebcams)
+        
+        # Muestra el menu principal en la ventana principal.
+        self.master.config(menu=self.menuPrincipal)
 
         self.image_dir = "./captures"
         if not os.path.exists(self.image_dir):
@@ -19,7 +35,13 @@ class WebcamCapture:
         self.crear_frames()
         self.create_widgets()
 
-        self.cap = cv2.VideoCapture(0)
+        ###########################################################################
+        ###########################################################################
+        ###########################################################################
+        self.cap = cv2.VideoCapture(4)
+        ###########################################################################
+        ###########################################################################
+        ###########################################################################
         self.cap.set(cv2.CAP_PROP_FRAME_WIDTH, 800)
         self.cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 600)
         
