@@ -1,6 +1,0 @@
-[Desktop Entry]
-Type=Application
-Name=CapturaImagen
-Exec=sh /home/gamble/capturaImagen/capturaImagen.sh
-Icon=/home/gamble/capturaImagen/images/icono.png
-Path=/home/gamble/capturaImagen
